@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>输液宝 - 智能输液辅助监控工具</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e8f1f8 100%);
+      color: #1a1a1a;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #1a6ec1 0%, #4a9eff 100%);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(26, 110, 193, 0.25);
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+    }
+    .section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .section h2 {
+      font-size: 18px;
+      color: #1a6ec1;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section h2::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 18px;
+      background: #1a6ec1;
+      border-radius: 3px;
+    }
+    .section p, .section li {
+      color: #4a4a4a;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .section li {
+      position: relative;
+      padding-left: 22px;
+    }
+    .section li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #1a6ec1;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #1a6ec1 0%, #4a9eff 100%);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 28px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 8px;
+      box-shadow: 0 4px 16px rgba(26, 110, 193, 0.25);
+    }
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      color: #888;
+      font-size: 13px;
+    }
+    .footer a {
+      color: #1a6ec1;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    @media (max-width: 480px) {
+      .container { padding: 32px 16px; }
+      h1 { font-size: 26px; }
+      .section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">输</div>
+      <h1>输液宝</h1>
+      <p class="subtitle">智能输液辅助监控工具 · 本地运行 · 隐私安全</p>
+    </div>
+
+    <div class="section">
+      <h2>核心功能</h2>
+      <ul>
+        <li>实时滴速检测：通过手机摄像头观察输液管滴壶，AI 本地识别液滴并计算滴速</li>
+        <li>智能完成提醒：根据容量和滴速估算剩余时间，在输液即将完成时多级报警</li>
+        <li>后台持续监控：锁屏或切换应用后仍可保持监控，通过通知和振动提醒</li>
+        <li>历史记录统计：保存每次输液数据，支持查看详情、导出和统计分析</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>隐私承诺</h2>
+      <p>输液宝坚守"本地存储、无云采集"原则。所有数据仅存于您的设备本地，摄像头画面不保存、不上传。无需注册登录，不含第三方广告或统计 SDK。</p>
+      <a class="btn" href="/privacy.html">查看隐私政策</a>
+    </div>
+
+    <div class="section">
+      <h2>下载安装</h2>
+      <p>输液宝即将上架各大应用市场，敬请期待。</p>
+    </div>
+
+    <div class="footer">
+      <p>
+        <a href="/privacy.html">隐私政策</a>
+        <a href="mailto:wmy_ld@126.com">联系我们</a>
+      </p>
+      <p style="margin-top: 12px;">© 2026 输液宝 · 开发者：吴明远</p>
+    </div>
+  </div>
+</body>
+</html>
